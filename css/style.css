@@ -71,6 +71,7 @@ a {
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
@@ -120,6 +121,33 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
+
+
+
+/****** Header ******/
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    
+}
+
+.navigation ul {
+    display: flex;
+    gap: 30px; 
+    list-style: none;
+}
+
+.navigation img {
+    width: 80px;
+    height: auto;
+}
+
+
 
 
 
