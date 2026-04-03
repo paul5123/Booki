@@ -133,6 +133,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
+    margin-bottom: 50px;
     
 }
 
@@ -142,12 +143,62 @@ a {
     list-style: none;
 }
 
+.navigation li:hover {
+    color: #0065FC;
+}
+
 .navigation img {
     width: 80px;
     height: auto;
 }
 
+.titre {
+    margin-bottom: 35px;
+}
+.titre h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.titre p {
+    margin-top: 0px;
+}
 
+
+
+.recherche {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    border: 2px solid;
+    border-color: #F2F2F2;
+
+    border-radius: 10px;
+    width: 28%;
+    height: 200%;
+}
+
+.recherche button {
+    height: 30px;
+    background-color: #0065FC;
+    color: white;
+    margin-top: 2px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+i.fa-solid.fa-location-dot {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    color: black;
+}
+
+.recherche input {
+    background-color: white;
+    text-align: center ;
+    margin-left: 20px; /***racourcir les 2 plus tards en margin***/
+    margin-right: 20px; /***racourcir les 2 plus tards en margin***/
+}
 
 
 
