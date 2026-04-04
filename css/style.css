@@ -128,6 +128,8 @@ a {
 
 /****** Header ******/
 
+
+
 /***Nav ****/
 .navigation {
     display: flex;
@@ -152,6 +154,7 @@ a {
     width: 80px;
     height: auto;
 }
+
 
 
 /*** H1 + phrase en dessous***/
@@ -214,6 +217,8 @@ a {
   border-radius: 0 15px 15px 0;
 }
 
+
+
 /***  Filtres ***/
 
 .filtres {
@@ -265,6 +270,84 @@ border-radius: 50px;
  border: 2px solid #D9D9D9;
 border-radius: 50px;
 }
+
+
+
+/*** information ***/
+
+.info {
+    display:flex;
+    align-items:center ;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.info i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 50px ;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+
+}
+
+
+
+
+
+/***** Main *****/
+
+
+/*** Hébergement  ***/
+
+.hebergements-and-populaires h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+.carte img {
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-radius: 15px;
+}
+
+.carte {
+    height: 207px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 15px;
+    margin: 5px;
+}
+.carte h3 {
+    margin:0px ;
+}
+
+.carte p {
+    margin: 10px 0px 5px 0px ;
+    font-size: 14px ;
+}
+
+.hébergement-carte {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 207px 207px;
+    gap: 30px;
+    
+}
+
+.afficher-plus {
+    font-weight: 1000;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
 
 
 
