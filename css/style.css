@@ -27,6 +27,10 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -266,23 +270,17 @@ a {
 
 
 /***  Filtres ***/
-.filtres i {
-    margin-left:19px ;
-    margin-right:10px;
-}
 
   
 .filtres {
 display: flex;
 align-items: center;
-gap: 15px;
+gap: 10px;
 margin-bottom: 35px;
 }
 
-.filtres-box {
-display: flex;
-flex-direction: column ;
-align-items: center;
+.filtres i {
+    margin-right: -9px;
 }
 
 .filtres button {
@@ -291,40 +289,33 @@ align-items: center;
 background-color: white;
 height: 50px;
 font-size: 17px;
-margin: 0px;
-padding: 0px;   
+gap: 19px;
+padding: 0 19px;
+border: 2px solid #D9D9D9;
+border-radius: 50px;
 }
 
+
 .filtres button:hover {
-    background-color: #DEEBFF;
-    cursor:pointer;
+background-color: #DEEBFF;
+cursor:pointer;
 }
 
 .filtres-economique {
- width: 173px;
- border: 2px solid #D9D9D9;
-border-radius: 50px;
+width: 173px;
 }
 
 .filtres-familial {
- width: 134px;
- border: 2px solid #D9D9D9;
-border-radius: 50px;
+width: 134px;
 }
 
 .filtres-romantique {
- width: 170px;
- border: 2px solid #D9D9D9;
-border-radius: 50px;
+width: 170px;
 }
 
 .filtres-nos-pepites {
- width: 167px;
- border: 2px solid #D9D9D9;
-border-radius: 50px;
+width: 167px;
 }
-
-
 
 /*** information ***/
 
@@ -345,6 +336,10 @@ border-radius: 50px;
     width: 20px;
     font-size: 12px;
 
+}
+
+.info p {
+    margin: 0px;
 }
 
 
