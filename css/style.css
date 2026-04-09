@@ -521,17 +521,65 @@ footer li:first-child {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .main-container {
+        padding: 20px;
+    }
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    .navigation img {
+        width: 100%;
+    }
+
+    .navigation ul {
+        width: 100%;
+        gap: 0px
+    }
+
+    .navigation li {
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .navigation a:hover::before {
+        content: "";
+        position: absolute;  
+        width: 100%;
+        background: #0065FC;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+    }
+
+    .navigation a::before {
+        content: "";
+        position: absolute;  
+        width: 100%;
+        background: #F2F2F2;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+    }
+
+    .filtres button {
+        width: 49%;
+    }
+
     .recherche span {
         display: none;
     }
     .icon-search {
-  display: inline;
-  color: white;
+        display: inline;
+        color: white;
     }
 
-  .filtres {
-    flex-wrap: wrap;
-  }
+
+
 }
-
-
