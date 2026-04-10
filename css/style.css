@@ -493,7 +493,7 @@ footer li:first-child {
     }
 
     .hebergements-and-populaires {
-        flex-direction: column;
+        flex-direction: column ;
     }
 
     .hebergements {
@@ -633,4 +633,40 @@ footer li:first-child {
     .filtres-nom {
         font-size: 14px;
     }
+
+
+    /****** Main ******/
+
+
+    /*** Hébergements and populaires***/
+    .hebergements-and-populaires {
+        flex-direction: column-reverse ;
+        
+    }
+
+    /*** Les plus populaires ***/
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+    /*** Hébergements à Marseille ***/
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+
+
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
+
 }
