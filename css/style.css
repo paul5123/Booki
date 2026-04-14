@@ -35,6 +35,7 @@ a {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -172,7 +173,7 @@ a {
   flex: 1;
   border: none;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
 }
 
@@ -207,17 +208,13 @@ font-size: 18px;
     
 }
 
-.filtres i {
-    margin-right: -9px;
-}
-
 .filtres button {
 display: flex;
 align-items: center;
 background-color: white;
 height: 50px;
 font-size: 16px;
-gap: 19px;
+gap: 15px;
 padding: 0 19px;
 border: 2px solid #D9D9D9;
 border-radius: 50px;
@@ -229,6 +226,10 @@ background-color: #DEEBFF;
 cursor:pointer;
 }
 
+input::placeholder {
+  font-weight: 700;
+  color: black;
+}
 
 
 
@@ -269,6 +270,7 @@ cursor:pointer;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 2.98% 
 }
 
 .hebergements-and-populaires section {
@@ -300,7 +302,6 @@ cursor:pointer;
 .hebergements-cards .card {
   display: block;
   margin-top: 0;
-  height: 207.25px;
 }
 
 .hebergements-cards a {
@@ -403,7 +404,6 @@ cursor:pointer;
 .activités {
     margin-top: 65px;
     margin-bottom: 60px;
-    height: 500px;
 }
 
 .activités h2{
@@ -413,15 +413,13 @@ cursor:pointer;
 
 .activités-cards {
   display: flex;
-  gap: 30px;
-  margin-bottom: 35px ;
-  margin-left: 30px;
+  gap: 2.34%;
+  margin: 0 30px 35px;
   height: 439px;
 }
 
 .activités-cards a {
-  width: calc((100% - 150px) / 4);
-  height: 100%;
+  width: 23.25%;
 }
 
 .activités-cards .card {
@@ -439,7 +437,7 @@ cursor:pointer;
 }
 
 .activités .card-title {
-    margin-left: 10px;
+    margin-left: 19px;
 }
 
 
@@ -448,10 +446,6 @@ cursor:pointer;
     display: flex;
     background-color: #f2f2f2;
     height: 163px;
-}
-
-.footer ul {
-    width: 33%;
 }
 
 .gras {
@@ -467,6 +461,7 @@ footer li:first-child {
     flex-direction: column;
     gap:15px ;
     list-style: none;
+    width: 33%;
 }
 
 
@@ -546,12 +541,11 @@ footer li:first-child {
     /***  marge ***/
     
     .main-container {
-        padding: 0px;
+        padding: 0;
     }
 
-    .titre, .recherche, .filtres, .info  {
-        padding-left:20px;
-        padding-right:20px;
+    .titre, .recherche, .filtres, .info, .activités {
+        padding: 0 20px;
     }
 
 
@@ -576,7 +570,7 @@ footer li:first-child {
 
     .navigation ul {
         width: 100%;
-        gap: 0px
+        gap: 0
     }
 
     .navigation li {
@@ -591,6 +585,7 @@ footer li:first-child {
         background: #0065FC;
         height: 2px;
         bottom: -10px;
+        top: auto;
         left: 0;
     }
 
@@ -607,8 +602,10 @@ footer li:first-child {
 
     /*** formulaire de recherche ***/
 
+
     .filtres button {
-        width: calc(50% - 19px);
+        width: 48.2%;
+        gap: 10px;
     }
 
     .recherche-btn {
@@ -618,6 +615,13 @@ footer li:first-child {
         padding: 15.1px 16px;
         border-radius: 15px;
         box-shadow: -2px 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    .recherche-bordure {
+        width: 100%;
+
     }
 
     .recherche span {
@@ -641,10 +645,15 @@ footer li:first-child {
     /*** Hébergements and populaires***/
     .hebergements-and-populaires {
         flex-direction: column-reverse ;
-        
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px ;
     }
 
     /*** Les plus populaires ***/
+
+
 
     .populaires-cards {
         flex-direction: column;
@@ -667,6 +676,48 @@ footer li:first-child {
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
+    }
+
+    /*** Activités à Marseille***/
+
+    .activités {
+    padding: 0 30px;
+    }
+
+    .activités {
+        height: auto;
+    }
+
+    .activités-cards {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .activités-cards a {
+        width: auto;
+    }
+
+    .activités-cards .card {
+        padding-bottom: 5px;
+    }
+
+    .activités-cards img {
+        width: 100%;
+    }
+
+    /****** Footer ******/
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+        padding: 30px 0;;
+    }
+
+    .footer ul {
+        width: 100%;
+        margin: 0;
     }
 
 }
