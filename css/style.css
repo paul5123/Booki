@@ -90,10 +90,8 @@ a {
 
 .navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;      /** Comencer la marge en haut pour que le logo et le menu de droite est leurs marge differentes **/
-    font-size: 16px;
+    align-items: flex-start;      
     margin-bottom: 60px;
 }
 
@@ -113,9 +111,7 @@ a {
 }
 
 .navigation img {
-    width: auto;
     height: 19px;
-    object-fit: contain;
     margin-top: 30px;
 }
 
@@ -127,7 +123,6 @@ a {
 }
 .titre h1 {
     font-size: 22px;
-    margin-top: 0;
     margin-bottom: 8px;
 }
 .titre p {
